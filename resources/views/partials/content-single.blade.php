@@ -1,0 +1,16 @@
+<article class="mt-14" @php(post_class('h-entry'))>
+
+  <div class="e-content ">
+    @php(the_content())
+  </div>
+
+  @if ($pagination)
+    <footer>
+      <nav class="page-nav" aria-label="Page">
+        {!! $pagination !!}
+      </nav>
+    </footer>
+  @endif
+
+  @php(comments_template())
+</article>

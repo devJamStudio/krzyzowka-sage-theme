@@ -1,0 +1,78 @@
+
+.krzyzowka-client__avatar  {
+  width: 72px;
+height: 72px;
+border-radius: 40px;
+border: 1px solid #000;
+position: relative;
+z-index: 0;
+}
+.krzyzowka-client__avatar  {
+  position: relative;
+  z-index: 0;
+}
+.krzyzowka-client__avatar:before  {
+  content: '';
+  background-color: lightgray ;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 72px;
+height: 72px;
+  z-index: 1;
+}
+.krzyzowka-client-recommend__header--wrapper h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom:48px;
+}
+.krzyzowka-client__name {
+  font-size: 32px;
+font-style: normal;
+font-weight: 300;
+line-height: 44px;
+}
+.krzyzowka-client__recommend {
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px
+}
+.krzyzowka-client__subtext {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+@media (min-width:767px) {
+  .krzyzowka-client-recommend__header--wrapper h3 {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 145.455% */
+    letter-spacing: -0.88px;
+    margin-bottom:0;
+  }
+  .krzyzowka-client__name {
+    font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 44px;
+  }
+  .krzyzowka-client__recommend {
+    font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  }
+  .krzyzowka-client__subtext {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.18px;
+  }
+}

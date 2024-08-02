@@ -1,0 +1,230 @@
+.krzyzowka-contact__name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.24px;
+}
+.krzyzowka-contact strong a {
+  font-weight: 600!important;
+
+}
+.krzyzowka-contact {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+}
+.krzyzowka-contact__adress {
+  font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 155.556% */
+letter-spacing: -0.18px;
+}
+@media (min-width:767px) {
+.krzyzowka-contact__name {
+    font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 44px;
+  }
+  .krzyzowka-contact {
+    font-size: 24px;
+    font-style: normal;
+    line-height: 36px;
+    letter-spacing: -0.24px;
+  }
+  .krzyzowka-contact__adress {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.24px;
+  }
+}
+.wpcf7-form {
+  display:flex;
+  flex-direction: column;
+  width: 100%!important;
+  gap:24px;
+}
+label   {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  padding:16px 12px;
+  color: var(--black-55, rgba(0, 0, 0, 0.55));
+  border:1px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wpcf7-form-control-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.wpcf7-form-control-wrap span {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.wpcf7-form-control-wrap input {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.wpcf7-form-control-wrap input,.wpcf7-form-control-wrap textarea  {
+  background:none!important;
+  width: 100%;
+  color: var(--Black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+.wpcf7-acceptance label{
+  color: var(--Black, #000);
+  border:none!important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+.wpcf7-acceptance label {
+  flex-direction: row;
+  padding:0;
+  gap:16px;
+  align-items:center;
+}
+.wpcf7-acceptance label a{
+  font-weight: 600;
+
+}
+.wpcf7-acceptance label [type=checkbox] {
+  width: 16px;
+  appearance: none;
+  -webkit-appeareance:none;
+  border:1px solid black!important;
+  height: 16px;
+  background:white!important;
+}
+.wpcf7-acceptance label [type=checkbox]::before {
+  content: "";
+    width: 80%;
+    height: 80%;
+    margin:auto;
+    transform: scale(0);
+    background-color: black;
+}
+.wpcf7-acceptance label [type=checkbox]:checked::before {
+  transform: scale(1);
+}
+.wpcf7-form-control-wrap  .wpcf7-acceptance span {
+  gap:4px;
+}
+.wpcf7-submit {
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  color:white;
+  position: relative;
+}
+.wpcf7-submit::after {
+  content: '';
+  position: absolute;
+  right: -20px; /* Adjust this value as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;  /* Adjust these dimensions based on your SVG */
+  height: 12px; /* Adjust these dimensions based on your SVG */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none"><path d="M1 12C1 8.68629 3.68629 6 7 6" stroke="%23E0ECE9" stroke-width="1.5" stroke-miterlimit="10"/><path d="M1 0C1 3.31371 3.68629 6 7 6" stroke="%23E0ECE9" stroke-width="1.5" stroke-miterlimit="10"/></svg>') no-repeat center center;
+  background-size: contain;
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+::-webkit-input-placeholder {  /* WebKit browsers */
+  color: var(--black-55, rgba(0, 0, 0, 0.55))!important;
+  /* Body M */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;   opacity: 1;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: var(--black-55, rgba(0, 0, 0, 0.55))!important;
+    /* Body M */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;   opacity: 1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: var(--black-55, rgba(0, 0, 0, 0.55))!important;
+    /* Body M */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;   opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: var(--black-55, rgba(0, 0, 0, 0.55))!important;
+    /* Body M */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  label:has(.wpcf7-not-valid-tip) {
+    border: 1px solid var(--Error, #F04438);
+    //box-shadow: 0px 0px 0px 4px rgba(239, 60, 12, 0.25);
+    position: relative;
+  }
+  label:has(.wpcf7-not-valid-tip):focus {
+    box-shadow: 0px 0px 0px 4px rgba(239, 60, 12, 0.25);
+  }
+  .wpcf7-not-valid-tip {
+    color:var(--Error, #F04438)!important;
+    font-size: 10px;
+    position: absolute !important;
+    font-weight: normal;
+    /* display: none !important; */
+    display: block;
+    top: 2.5rem;
+}
+label:has(.wpcf7-not-valid-tip):after {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 24px;
+height: 100%;
+content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_3977_465)'%3E%3Cpath d='M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C10.8181 3 9.64778 3.23279 8.55585 3.68508C7.46392 4.13738 6.47177 4.80031 5.63604 5.63604C4.80031 6.47177 4.13738 7.46392 3.68508 8.55585C3.23279 9.64778 3 10.8181 3 12Z' stroke='%23F04438' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M12 9V13' stroke='%23F04438' stroke-width='1.5' stroke-linecap='square'/%3E%3Cpath d='M12 16V16.01' stroke='%23F04438' stroke-width='1.5' stroke-linecap='square'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3977_465'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+.wpcf7-response-output {
+  display: none!important
+}
+.krzyzowka-contact__avatar--wrapper {
+  position: relative;
+}
+
+.krzyzowka-contact__avatar--wrapper:after {
+  position: absolute;
+  right: -40px;
+  bottom:-20px;
+  content:"Siemanko";
+  width: 130px;
+height: 130px;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='116' height='116' viewBox='0 0 116 116' fill='none'%3E%3Cpath id='Star 1' d='M51.5269 3.81092C46.0928 -0.63489 37.8944 1.64644 35.5377 8.26018C34.0327 12.4836 29.7234 15.0271 25.2986 14.3035C18.3695 13.1704 12.4102 19.2453 13.6761 26.1513C14.4845 30.5614 12.0242 34.9188 7.83041 36.5045C1.26315 38.9877 -0.860383 47.2284 3.68892 52.5762C6.59405 55.9913 6.64207 60.995 3.80303 64.4652C-0.642783 69.8994 1.63853 78.0978 8.25225 80.4545C12.4757 81.9594 15.0191 86.2687 14.2956 90.6935C13.1624 97.6226 19.2373 103.582 26.1433 102.316C30.5534 101.508 34.9108 103.968 36.4965 108.162C38.9797 114.729 47.2204 116.852 52.5682 112.303C55.9833 109.398 60.987 109.35 64.4572 112.189C69.8914 116.635 78.0898 114.353 80.4465 107.74C81.9514 103.516 86.2608 100.973 90.6856 101.696C97.6146 102.829 103.574 96.7546 102.308 89.8486C101.5 85.4385 103.96 81.0811 108.154 79.4954C114.721 77.0121 116.844 68.7714 112.295 63.4236C109.39 60.0086 109.342 55.0049 112.181 51.5347C116.627 46.1005 114.346 37.9021 107.732 35.5454C103.508 34.0405 100.965 29.7311 101.689 25.3063C102.822 18.3773 96.7468 12.418 89.8408 13.6839C85.4307 14.4923 81.0733 12.032 79.4876 7.83823C77.0044 1.27096 68.7637 -0.852537 63.4159 3.69678C60.0008 6.60191 54.9971 6.64995 51.5269 3.81092Z' fill='%23FFA9CD' stroke='black' stroke-width='0.870837'/%3E%3C/svg%3E");
+transform: rotate(-15.55deg);
+background-size:cover;
+z-index: 9;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 600;
+}
