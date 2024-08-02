@@ -1,6 +1,16 @@
 # NPM packages folder.
 node_modules
 
+.yarn
+
+.yarn.lock
+
+.yarnrc.yml
+
+.idea
+.cjs
+
+.DS_Store
 # Build files
 dist/
 
